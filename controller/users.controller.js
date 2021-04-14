@@ -1,18 +1,20 @@
 const { response } = require('express')
 
 const usuariosGET = (request, response) => {
-    const { q, nombre = 'No name', key} = request.query
+    const query = request.query
     response.json({
         ok: 'true',
         message: 'get API - usuariosGET',
-        q, nombre, key
+        query
     })
 }
 
 const usuariosPOST = (request, response) => {
+    const {name, lastName} = request.body;
     response.json({
         ok: 'true',
         message: 'post API - usuariosPOST',
+        name, lastName
     })
 }
 
