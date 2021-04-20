@@ -20,7 +20,7 @@ class Server{
     async connectDB(){
         await dbConnection()
     }
-
+    
     middlewares() {
         //Cors
         this.app.use(cors())
