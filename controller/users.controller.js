@@ -63,8 +63,6 @@ const usuariosPATCH = (request, response) => {
 
 const usuariosDELETE = async (request, response) => {
     const { id } = request.params
-    const constraint = { id }
-
     //Borar fisicamente
     // const usuario = await Usuario.findByIdAndDelete( id )
     //Borrar logicamente
