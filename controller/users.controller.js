@@ -54,6 +54,7 @@ const usuariosPUT = async (request, response) => {
     response.json({usuario})
 }
 
+
 const usuariosPATCH = (request, response) => {
     response.json({
         ok: 'true',
